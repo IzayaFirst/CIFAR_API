@@ -56,3 +56,4 @@ if __name__ == '__main__':
 
     print('Loss: %.3f' % scores[0])
     print('Accuracy: %.3f' % scores[1])
+    model.save('cifar10.h5')
