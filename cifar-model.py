@@ -22,7 +22,7 @@ np.random.seed(1000)
 if __name__ == '__main__':
     # Load the dataset
     (X_train, Y_train), (X_test, Y_test) = cifar10.load_data()
-
+    print(X_train, len(X_test))
     # Create the model
     model = Sequential()
     model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(32, 32, 3)))
